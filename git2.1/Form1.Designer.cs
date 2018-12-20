@@ -163,16 +163,16 @@
             // 
             this.button3.Location = new System.Drawing.Point(56, 52);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(161, 48);
+            this.button3.Size = new System.Drawing.Size(161, 69);
             this.button3.TabIndex = 0;
             this.button3.Text = "Мои бронирования";
             this.button3.UseVisualStyleBackColor = true;
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(58, 134);
+            this.button4.Location = new System.Drawing.Point(56, 134);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(159, 48);
+            this.button4.Size = new System.Drawing.Size(161, 65);
             this.button4.TabIndex = 1;
             this.button4.Text = "Мой профиль";
             this.button4.UseVisualStyleBackColor = true;
