@@ -22,6 +22,13 @@ namespace git2._1
             panel1.Visible = true;
             panel2.Visible = false;
             panel3.Visible = false;
+            listBox1.Visible = false;
+            comboBox1.Items.Add("Россия");
+            comboBox1.Items.Add("Италия");
+            comboBox2.Items.Add("Москва");
+            comboBox2.Items.Add("Рим");
+            comboBox3.Items.Add("1");
+            comboBox3.Items.Add("2");
         }
 
         private void button6_Click(object sender, EventArgs e)
@@ -35,12 +42,20 @@ namespace git2._1
             {
                 panel1.Visible = false;
                 panel3.Visible = true;
+                listBox1.Text = "Здесь будут отображены варианты размещения";
             }
             else
             {
                 panel1.Visible = false;
                 panel2.Visible = true;
+                listBox1.Text = "Здесь будут отображены варианты размещения";
             }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            listBox1.Visible = true;
+            listBox1.Text = "Здесь будут отображены варианты размещения";
         }
     }
 }

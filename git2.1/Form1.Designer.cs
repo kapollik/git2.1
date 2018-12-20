@@ -46,6 +46,7 @@
             this.button5 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
+            this.listBox1 = new System.Windows.Forms.ListBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -110,16 +111,17 @@
             this.button1.TabIndex = 6;
             this.button1.Text = "Найти";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.textBox1);
             this.panel1.Controls.Add(this.button2);
             this.panel1.Controls.Add(this.label4);
+            this.panel1.Controls.Add(this.listBox1);
             this.panel1.Location = new System.Drawing.Point(52, 36);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(717, 370);
+            this.panel1.Size = new System.Drawing.Size(568, 370);
             this.panel1.TabIndex = 7;
             // 
             // label4
@@ -152,9 +154,9 @@
             // 
             this.panel2.Controls.Add(this.button4);
             this.panel2.Controls.Add(this.button3);
-            this.panel2.Location = new System.Drawing.Point(504, 36);
+            this.panel2.Location = new System.Drawing.Point(626, 36);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(265, 367);
+            this.panel2.Size = new System.Drawing.Size(265, 364);
             this.panel2.TabIndex = 5;
             // 
             // button3
@@ -180,46 +182,54 @@
             this.panel3.Controls.Add(this.button7);
             this.panel3.Controls.Add(this.button6);
             this.panel3.Controls.Add(this.button5);
-            this.panel3.Location = new System.Drawing.Point(443, 27);
+            this.panel3.Location = new System.Drawing.Point(714, 36);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(262, 337);
+            this.panel3.Size = new System.Drawing.Size(266, 367);
             this.panel3.TabIndex = 8;
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(53, 60);
+            this.button5.Location = new System.Drawing.Point(69, 71);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(159, 48);
+            this.button5.Size = new System.Drawing.Size(153, 58);
             this.button5.TabIndex = 0;
-            this.button5.Text = "Обновить каталог";
+            this.button5.Text = "Обновление каталога";
             this.button5.UseVisualStyleBackColor = true;
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(52, 144);
+            this.button6.Location = new System.Drawing.Point(69, 163);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(159, 48);
+            this.button6.Size = new System.Drawing.Size(153, 60);
             this.button6.TabIndex = 1;
-            this.button6.Text = "Заказы по клиентам";
+            this.button6.Text = "Непроверенные заказы";
             this.button6.UseVisualStyleBackColor = true;
-            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // button7
             // 
-            this.button7.Location = new System.Drawing.Point(52, 228);
+            this.button7.Location = new System.Drawing.Point(69, 255);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(159, 48);
+            this.button7.Size = new System.Drawing.Size(153, 62);
             this.button7.TabIndex = 2;
-            this.button7.Text = "Мой профиль";
+            this.button7.Text = "Все заказы";
             this.button7.UseVisualStyleBackColor = true;
+            // 
+            // listBox1
+            // 
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.ItemHeight = 20;
+            this.listBox1.Location = new System.Drawing.Point(361, -24);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(226, 424);
+            this.listBox1.TabIndex = 9;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.panel2);
+            this.ClientSize = new System.Drawing.Size(1029, 450);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panel3);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -227,6 +237,7 @@
             this.Controls.Add(this.comboBox3);
             this.Controls.Add(this.comboBox2);
             this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.panel2);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -259,6 +270,7 @@
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.ListBox listBox1;
     }
 }
 
